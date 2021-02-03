@@ -1,7 +1,7 @@
 import math as math
 
 symbol = str(input("Input symbol: "))
-number = int(input("Input odd number: "))
+number = int(input("Input number: "))
 spaces = 0
 spaceStore = []
 oddNumbers = []
