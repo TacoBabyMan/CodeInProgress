@@ -1,13 +1,14 @@
 import math as math
 
 symbol = str(input("Input symbol: "))
-number = int(input("Input odd number: "))
+number = int(input("Input number: "))
 spaces = 0
 spaceStore = []
 oddNumbers = []
 
 order = []
 
+even = 0;
 
 p = 0
 k = 0
@@ -40,6 +41,8 @@ def finalise(order):
     for g in range(1,number):
         symbolStack += symbol
     order[x] += symbolStack
+    if(even == 1):
+        order[0] += symbol
     for l in range(0,len(order)):
         print(order[l])
 for x in range(1,int(number+1)):
@@ -54,7 +57,8 @@ for x in range(1,int(number+1)):
 for x in range(1,int(number+1)):
     evenChecker = math.floor(x/2)
     evenChecker = evenChecker*2
-
+    if((math.floor(number/2))*2 == number):
+        even = 1
     if (evenChecker != x):
         spaces = number - x
         spaceAdd = int( spaces/2)
