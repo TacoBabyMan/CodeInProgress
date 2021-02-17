@@ -15,10 +15,10 @@
 </head>
 <!-- elementId(this.id) -->
 <!-- CordUpdate(event) -->
+<!-- onmouseenter = CurrentElement(this.id) -->
 <div id = "default"></div>
-<body onmousemove = CordUpdate(event)>
-  <div id = "sqaurepos" style = "height:300px;width:300px;background-color:green;" onmouseover = "CurrentElement(this.id)"></div>
-	<div id = "square1" style = "height:100px;width:100px;background-color:black;position:absolute;transform:translate(-50%,-50%);pointer-events:default;" onmousedown = elementId(this.id)></div>
+<body>
+	
 </body>
 <script>
 	//Attach events to the document
@@ -26,6 +26,7 @@
 	document.addEventListener("mouseup",mouseu);
 
 	var ElementID = "default";
+	var ElementQuad;
 	var mouseX = 0;
 	var mouseY = 0;
 	//Get Element Id when it's clicked
@@ -42,14 +43,14 @@
 		clearInterval(mouse);
     if(ElementID != "default"){
       document.getElementById(ElementID).style.pointerEvents = "none";
-      setTimeout(
-        function(){
-        },0);
-    }
-    setTimeout(
-      function(){
-        ElementID = "default";
-      },0);
+      setTimeout(()=>{
+				document.getElementById(ElementID).style.pointerEvents = "auto";
+				console.log(ElementID, ElementQuad);
+				ElementID = "default";
+			},50);
+
+		}
+
 	}
 	//Get element of the mouse cursor at all times of hover of element   /// var mouseX, var mouseY
 	function CordUpdate(event){
@@ -63,8 +64,9 @@
 				document.getElementById(ElementID).style.top = mouseY + "px";
 			}
 	}
+	//Gets the quadrant that the mouse is in, eg. the element its above.
   function CurrentElement (id){
-    console.log(id);
+  	ElementQuad = id;
   }
 </script>
 </script>
