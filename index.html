@@ -15,8 +15,10 @@
 </head>
 <!-- elementId(this.id) -->
 <!-- CordUpdate(event) -->
-<body>
-	
+<div id = "default"></div>
+<body onmousemove = CordUpdate(event)>
+  <div id = "sqaurepos" style = "height:300px;width:300px;background-color:green;" onmouseover = "CurrentElement(this.id)"></div>
+	<div id = "square1" style = "height:100px;width:100px;background-color:black;position:absolute;transform:translate(-50%,-50%);pointer-events:default;" onmousedown = elementId(this.id)></div>
 </body>
 <script>
 	//Attach events to the document
@@ -38,7 +40,16 @@
 	//When moues is up clear the interval and reset the id of element
 	function mouseu(){
 		clearInterval(mouse);
-		ElementID = "default";
+    if(ElementID != "default"){
+      document.getElementById(ElementID).style.pointerEvents = "none";
+      setTimeout(
+        function(){
+        },0);
+    }
+    setTimeout(
+      function(){
+        ElementID = "default";
+      },0);
 	}
 	//Get element of the mouse cursor at all times of hover of element   /// var mouseX, var mouseY
 	function CordUpdate(event){
@@ -52,7 +63,9 @@
 				document.getElementById(ElementID).style.top = mouseY + "px";
 			}
 	}
-
+  function CurrentElement (id){
+    console.log(id);
+  }
 </script>
 </script>
 </html>
