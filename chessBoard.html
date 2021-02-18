@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+	<style>
+	  body{
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			height:100vh;
+			width:100vw;
+			background-color:grey;
+			margin:0px;
+	  }
+		.tilewhite{
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			height:110px;
+			width:110px;
+			background-color:#e3e3e3;
+			cursor:pointer;
+		}
+		.tileblack{
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			height:110px;
+			width:110px;
+			background-color:orange;
+		}
+		.PieceAspectDefault{
+			height:70px;
+			width:70px;
+			position:absolute;
+			cursor:pointer;
+			-webkit-user-select:none;
+			-webkit-user-drag:none;
+		}
+	</style>
+</head>
+<!-- onmousedown = elementId(this.id) -->
+<!-- onmousemove = CordUpdate(event) -->
+<!-- onmouseenter = CurrentElement(this.id) -->
+<div id = "default"></div>
+<body onload = load() onresize = load()>
+	<div style = "height:880px;width:880px;display:grid;grid-template-columns:110px 110px 110px 110px 110px 110px 110px 110px;grid-row-gap:0px;" onmousemove = CordUpdate(event)>
+
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "a8" >
+
+		</div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "b8" >
+
+		</div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "c8" >
+
+		</div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "d8" >
+
+		</div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "e8" >
+
+		</div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "f8" >
+
+		</div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "g8" >
+
+		</div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "h8" >
+
+		</div>
+
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "a7" >
+
+		</div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "b7" >
+
+		</div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "c7" >
+
+		</div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "d7" >
+
+		</div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "e7" >
+
+		</div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "f7" >
+
+		</div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "g7" >
+
+		</div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "h7" >
+
+		</div>
+
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "a6" ></div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "b6" ></div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "c6" ></div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "d6" ></div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "e6" ></div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "f6" ></div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "g6" ></div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "h6" ></div>
+
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "a5" ></div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "b5" ></div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "c5" ></div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "d5" ></div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "e5" ></div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "f5" ></div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "g5" ></div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "h5" ></div>
+
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "a4" ></div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "b4" ></div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "c4" ></div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "d4" ></div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "e4" ></div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "f4" ></div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "g4" ></div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "h4" ></div>
+
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "a3" ></div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "b3" ></div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "c3" ></div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "d3" ></div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "e3" ></div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "f3" ></div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "g3" ></div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "h3" ></div>
+
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "a2" >
+
+		</div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "b2" >
+
+		</div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "c2" >
+
+		</div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "d2" >
+
+		</div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "e2" >
+
+		</div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "f2" >
+
+		</div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "g2" >
+			<img src = "pawn.jpg" id = "square2" class = "PieceAspectDefault" onmousedown = elementId(this.id,event)></img>
+		</div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "h2" >
+			<img src = "pawn.jpg" id = "square1" class = "PieceAspectDefault" onmousedown = elementId(this.id,event)></img>
+		</div>
+
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "a1" >
+
+		</div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "b1" >
+
+		</div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "c1" >
+
+		</div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "d1" >
+
+		</div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "e1" >
+
+		</div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "f1" >
+
+		</div>
+		<div class = "tileblack" onmouseenter = CurrentElement(this.id) id = "g1" >
+
+		</div>
+		<div class = "tilewhite" onmouseenter = CurrentElement(this.id) id = "h1" >
+
+		</div>
+
+	</div>
+</body>
+<script>
+	load = () =>{
+	}
+	//Attach events to the document
+	document.addEventListener("mousedown",moused);
+	document.addEventListener("mouseup",mouseu);
+
+	var ElementID = "default";
+	var ElementSelected;
+	var ElementQuad;
+	var mouseX = 100;
+	var mouseY = 100;
+	//Get Element Id when it's clicked and do tranlations and ordering
+	function elementId(id,ev){
+		ElementID = String(id);
+		CordUpdate(ev);
+		document.getElementById(ElementID).style.position = "absolute";
+		document.getElementById(ElementID).style.zIndex = 1;
+		document.getElementById(ElementID).style.transform = "translate(-50%,-50%)"; // Adds transform for centering element
+		ElementSelected = (document.getElementById(ElementID));
+	}
+	//When mouse is down run the function with interval at 60ms
+	function moused(){
+		mouse = setInterval(MouseDown,0);
+	}
+	//When moues is up clear the interval and reset the id of element
+	function mouseu(){
+		clearInterval(mouse);
+    if(ElementID != "default"){
+      document.getElementById(ElementID).style.pointerEvents = "none";
+      setTimeout(()=>{
+				document.getElementById(ElementID).style.pointerEvents = "auto";
+				console.log(ElementID, ElementQuad);
+				document.getElementById(ElementQuad).append(ElementSelected);
+				document.getElementById(ElementID).style.position = "inherit";
+				document.getElementById(ElementID).style.transform = "translate(-0%,-0%)";//Removes transform for centering elemnt
+				document.getElementById(ElementID).style.zIndex = 0;
+				ElementID = "default";
+			},50);
+
+		}
+
+	}
+	//Get element of the mouse cursor at all times of hover of element   /// var mouseX, var mouseY
+	function CordUpdate(event){
+		mouseX = event.clientX;
+		mouseY = event.clientY;
+	}
+	//Updates the element that is clicked to the cursor posisition
+	MouseDown = () =>{
+		if(ElementID != "default"){
+				document.getElementById(ElementID).style.left = mouseX + "px";
+				document.getElementById(ElementID).style.top = mouseY + "px";
+			}
+	}
+	//Gets the quadrant that the mouse is in, eg. the element its above.
+  function CurrentElement (id){
+  	ElementQuad = id;
+  }
+</script>
+</html>
